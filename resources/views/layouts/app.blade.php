@@ -58,6 +58,14 @@
         padding-top: 10px;
     } 
 
+    .carousel {
+        height:550px;
+    }
+
+    .formsubmitting {
+        padding-bottom: 50px;
+    }
+
     </style>
 
 </head>
@@ -118,7 +126,9 @@
     clear: 'Clear',
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
-    });  
+    }); 
+
+    $('.carousel.carousel-slider').carousel({fullWidth: true}); 
 
     </script>
 

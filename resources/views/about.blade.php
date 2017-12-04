@@ -97,11 +97,11 @@
     </nav>
 </div>
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="center-align col l12">
             <img class="hide-on-med-and-down" src="{{ asset('logo.png') }}">
         </div>
-    </div>
+    </div> -->
 
 
 

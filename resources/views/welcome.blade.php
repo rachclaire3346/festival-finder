@@ -85,6 +85,7 @@
 
             .ff {
                 padding-top: 10px;
+                padding-left: 10px;
             }
 
             .formsubmitting {
@@ -107,11 +108,9 @@
     </head>
     
     <body>
-        <button class="image black btn-flat ff">
             <a href="{{ url('/') }}">
-                <img src="{{ asset('ugh.png') }}">
+                <img class="ff" src="{{ asset('ugh.png') }}">
             </a>
-        </button>
         <div class="flex-center position-ref">
             @if (Route::has('login'))
                 <div class="top-right links navigation">
@@ -157,7 +156,7 @@
                          <div class="carousel-item black white-text" href="#one!">
                             <div class="container">
                                 <div class="container">
-                                    <label for="question_one" class="control-label"><h2 class="white-text center">How far are you willing to travel?</h2></label>
+                                    <label for="question_one" class="control-label"><h1 class="white-text center">How far are you willing to travel?</h1></label>
                                     <div class="container">
                                         <h5 class="white-text left-align valign-wrapper">
                                             <input name="group2" type="radio" id="test3" value="3" />
@@ -185,7 +184,7 @@
                         <div class="carousel-item black white-text" href="#two!">
                             <div class="container">
                                 <div class="container">
-                                    <label for="question_two" class="control-label"><h2 class="white-text center">What is your ideal festival length?</h2></label>
+                                    <label for="question_two" class="control-label"><h1 class="white-text center">What is your ideal festival length?</h1></label>
                                     <div class="container">
                                         <h5 class="white-text left-align valign-wrapper">
                                             <input name="group3" type="radio" id="test7" value="7" />
@@ -212,7 +211,7 @@
                         <div class="carousel-item black white-text" href="#three!">
                             <div class="container">
                                 <div class="container">
-                                    <label for="question_three" class="control-label"><h2 class="white-text center">How do you feel about crowds?</h2></label>
+                                    <label for="question_three" class="control-label"><h1 class="white-text center">How do you feel about crowds?</h1></label>
                                     <div class="container">
                                         <h5 class="white-text left-align valign-wrapper">
                                             <input name="group4" type="radio" id="test11" value="11" />
@@ -235,7 +234,7 @@
                         <div class="carousel-item black white-text" href="#four!">
                             <div class="container">
                                 <div class="container">
-                                    <label for="question_four" class="control-label"><h2 class="white-text center">Who is your dream headliner?</h2></label>
+                                    <label for="question_four" class="control-label"><h1 class="white-text center">Who is your dream headliner?</h1></label>
                                     <div class="container">
                                         <h5 class="white-text left-align valign-wrapper">
                                             <input name="group5" type="radio" id="test14" value="14" />
@@ -266,7 +265,7 @@
                         <div class="carousel-item black white-text" href="#five!">
                             <div class="container">
                                 <div class="container">
-                                    <label for="question_five" class="control-label"><h2 class="white-text center">How important is stage decoration to you?</h2></label>
+                                    <label for="question_five" class="control-label"><h1 class="white-text center">How important is stage decoration to you?</h1></label>
                                     <div class="container">
                                         <h5 class="white-text left-align valign-wrapper">
                                             <input name="group6" type="radio" id="test22" value="22" />
@@ -285,7 +284,7 @@
                         <div class="carousel-item black white-text" href="#six!">
                             <div class="container">
                                 <div class="container">
-                                    <label for="question_six" class="control-label"><h2 class="white-text center">What is your price range?</h2></label>
+                                    <label for="question_six" class="control-label"><h1 class="white-text center">What is your price range?</h1></label>
                                     <div class="container">
                                         <h5 class="white-text left-align valign-wrapper">
                                             <input name="group7" type="radio" id="test24" value="24" />
@@ -312,7 +311,7 @@
                     <div class="carousel-item black white-text" href="#seven!">
                         <div class="container">
                             <div class="container">
-                                <label for="question_seven" class="control-label"><h2 class="white-text center">pick your dates! You can pick a particular weekend or a time range</h2></label>
+                                <label for="question_seven" class="control-label"><h1 class="white-text center">pick your dates! You can pick a particular weekend or a time range</h1></label>
                                 <div class="container">
                                     <div class="form-group{{ $errors->has('question_seven') ? ' has-error' : '' }}">
                                         <label for="question_seven" class="control-label"><h5 class="white-text left-align">Starting date</h5></label>

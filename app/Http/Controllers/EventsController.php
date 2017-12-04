@@ -38,19 +38,23 @@ class EventsController extends Controller
         $event = new \App\Event;
 
         $event->name = request('name');
-        $event->start_date = request('start_date');
-        $event->end_date = request('end_date');
-        $event->price = request('price');
-        $event->attendance = request('attendance');
         $event->description = request('description');
-        $event->lineup = request('lineup');
         $event->address = request('address');
         $event->zipcode = request('zipcode');
+        $event->image = request('image');
+        $event->question_two = request('group3');
+        $event->question_three = request('group4');
+        $event->question_four = request('group5');
+        $event->question_five = request('group6');
+        $event->question_six = request('group7');
+        $event->question_seven = request('group8');
+        $event->question_eight = request('group9');
         $event->administrator = \Auth::user()->id;
+
 
         $event->save();
 
-        return redirect('/home'); 
+        return redirect('/events'); 
     }
 
     /**

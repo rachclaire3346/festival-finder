@@ -16,18 +16,22 @@ class CreateNewEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->dateTime('start_date');
-            $table->dateTime('end_date');
-            $table->string('price');
-            $table->string('attendance');
             $table->text('description');
-            $table->text('lineup');
             $table->string('address');
             $table->integer('zipcode');
+            $table->binary('image');
+            $table->string('question_two');
+            $table->string('question_three');
+            $table->string('question_four');
+            $table->string('question_five');
+            $table->string('question_six');
+            $table->string('question_seven');
+            $table->string('question_eight');
             $table->integer('administrator');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
