@@ -14,7 +14,16 @@ class BrowseController extends Controller
      */
     public function index()
     {
-        return view('browse');
+        
+        $events = \App\Event::orderBy('events.name')->get();
+        //$events = \DB::table('events')
+            //->orderBy('events.name')
+            //->get();
+        //$events = \App\Event::orderBy('events.name')->get();
+
+        return view('browse', compact('events'));
+
+
     }
 
     /**

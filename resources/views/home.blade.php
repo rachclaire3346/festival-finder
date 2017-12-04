@@ -60,6 +60,7 @@
 
     .formsubmitting {
         padding-bottom: 50px;
+        padding-top: 30px;
     }
 
     </style>
@@ -99,67 +100,73 @@
         </ul>
       </div>
     </nav>
+    <div class="row information">
+        <div class="center-align col s12">
+           <h2 class="bluewords">{{ Auth::user()->name }}'s Festivals</h2>
+        </div>
+    </div>
     <div class="container">
-        <div class="row information">
-            <div class="center-align col s12">
-               <h2 class="bluewords">{{ Auth::user()->name }}'s Festivals</h2>
-            </div>
-        </div>
-        <div>
-            <div class="row">
-                <h4 class="white-text">Tomorrowland</h4>
-            </div>
+        <h3 class="pinkwords">Matched Events</h3>
+        @foreach($events as $event)
+            <h4 class="white-text">{{$event->name}}</h4>
             <div class="row">
                 <div class="col l6 s12">
-                    <img style="height:280px; width:430px;" class="ff" src="{{ asset('tomorrowland.jpg') }}">
+                    <img style="height:280px; width:430px;" src="{{ asset('tomorrowland.jpg') }}">
                 </div>
                 <div class="col l6 s12">
-                    <h5 class="white-text">Location: Boom, Belgium</h5>
-                    <h5 class="white-text">Price: $300+</h5>
-                    <h5 class="white-text">Dates: 20-22 July 2018 & 27-29 July 2018</h5>
-                    <h5 class="white-text">Description: Tomorrowland (festival) Tomorrowland is an electronic dance music festival held in Boom, Belgium. Tomorrowland was first held in 2005, and has since become one of the world's largest and most notable music festivals. It now stretches over 2 weekends and usually sells out in minutes.</h5>
+                    <h5 class="white-text">Location: {{$event->address}}</h5>
+                    <h5 class="white-text">Price: {{$event->question_six}}</h5>
+                    <h5 class="white-text">Dates: {{$event->question_seven}} - {{$event->question_eight}}</h5>
+                    <h5 class="white-text">Description: {{$event->description}}</h5>
                 </div>
             </div>
-        </div>
-        <div>
-            <h3 class="pinkwords">Nearby Events</h3>
-             <div class="row">
-                <h4 class="white-text">Tomorrowland</h4>
-            </div>
+        @endforeach
+        <div class="row center-align formsubmitting">
+        <button class="btn">
+            <a href="/">Retake Quiz</a>
+        </button>
+    </div>
+    </div>
+   <div class="container">
+        <h3 class="pinkwords">Upcoming Events</h3>
+        @foreach($locals as $local)
+            <h4 class="white-text">{{$local->name}}</h4>
             <div class="row">
                 <div class="col l6 s12">
-                    <img style="height:280px; width:430px;" class="ff" src="{{ asset('tomorrowland.jpg') }}">
+                    <img style="height:280px; width:430px;" src="{{ asset('tomorrowland.jpg') }}">
                 </div>
                 <div class="col l6 s12">
-                    <h5 class="white-text">Location: Boom, Belgium</h5>
-                    <h5 class="white-text">Price: $300+</h5>
-                    <h5 class="white-text">Dates: 20-22 July 2018 & 27-29 July 2018</h5>
-                    <h5 class="white-text">Description: Tomorrowland (festival) Tomorrowland is an electronic dance music festival held in Boom, Belgium. Tomorrowland was first held in 2005, and has since become one of the world's largest and most notable music festivals. It now stretches over 2 weekends and usually sells out in minutes.</h5>
+                    <h5 class="white-text">Location: {{$local->address}}</h5>
+                    <h5 class="white-text">Price: {{$local->question_six}}</h5>
+                    <h5 class="white-text">Dates: {{$local->question_seven}} - {{$local->question_eight}}</h5>
+                    <h5 class="white-text">Description: {{$local->description}}</h5>
                 </div>
             </div>
-        </div>
-        <div>
-            <h3 class="pinkwords">My Created Events</h3>
-              <div class="row">
-                <h4 class="white-text">Tomorrowland</h4>
-            </div>
+        @endforeach
+    </div>
+    
+    <div class="container">
+        <h3 class="pinkwords">My Registered Events</h3>
+        @foreach($events as $event)
+            <h4 class="white-text">{{$event->name}}</h4>
             <div class="row">
                 <div class="col l6 s12">
-                    <img style="height:280px; width:430px;" class="ff" src="{{ asset('tomorrowland.jpg') }}">
+                    <img style="height:280px; width:430px;" src="{{ asset('tomorrowland.jpg') }}">
                 </div>
                 <div class="col l6 s12">
-                    <h5 class="white-text">Location: Boom, Belgium</h5>
-                    <h5 class="white-text">Price: $300+</h5>
-                    <h5 class="white-text">Dates: 20-22 July 2018 & 27-29 July 2018</h5>
-                    <h5 class="white-text">Description: Tomorrowland (festival) Tomorrowland is an electronic dance music festival held in Boom, Belgium. Tomorrowland was first held in 2005, and has since become one of the world's largest and most notable music festivals. It now stretches over 2 weekends and usually s3ells out in minutes.</h5>
+                    <h5 class="white-text">Location: {{$event->address}}</h5>
+                    <h5 class="white-text">Price: {{$event->question_six}}</h5>
+                    <h5 class="white-text">Dates: {{$event->question_seven}} - {{$event->question_eight}}</h5>
+                    <h5 class="white-text">Description: {{$event->description}}</h5>
                 </div>
             </div>
-            <div class="row center-align formsubmitting">
-                <button class="btn">
-                    <a href="/events">Create Event</a>
-                </button>
-            </div>
-        </div>
+        @endforeach
+    </div>
+
+    <div class="row center-align formsubmitting">
+        <button class="btn">
+            <a href="/events">Create Event</a>
+        </button>
     </div>
 </div>
 

@@ -23,6 +23,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        // $matches = \App\Event::orderBy('events.question_seve')->get();
+
+        $locals = \App\Event::limit(3)->orderBy('events.question_seven')->get();
+
+        $events = \App\Event:: all()->where('administrator', '=', \Auth::user()->id);
+
+
+        return view('home', compact('events', 'locals'));
     }
 }

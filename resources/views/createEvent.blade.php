@@ -207,19 +207,19 @@
                                                 <label for="question_six" class="control-label"><h1 class="white-text center">What is the average price range of your event?</h1></label>
                                                 <div class="container">
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test24" value="24" />
+                                                        <input name="group7" type="radio" id="test24" value="$50 or less" />
                                                         <label for="test24"></label>A. $50 or less
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test25" value="25" />
+                                                        <input name="group7" type="radio" id="test25" value="$50 - $100" />
                                                         <label for="test25"></label>B. $50 - $100
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test26" value="26" />
+                                                        <input name="group7" type="radio" id="test26" value="$100 - $300" />
                                                         <label for="test26"></label>C. $100 - $300
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test27" value="27" />
+                                                        <input name="group7" type="radio" id="test27" value="$300+" />
                                                         <label for="test27"></label>D. $300+
                                                     </h5>
                                                 </div>

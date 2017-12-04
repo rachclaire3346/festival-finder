@@ -96,21 +96,36 @@
       </div>
     </nav>
     <nav class="black">
-    <div class="nav-wrapper">
-      <form>
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+            @foreach($events as $event)
+            <div class="container">
+                    <div class="row">
+                        <h4 class="white-text">{{$event->name}}</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <img style="height:280px; width:430px;" src="{{ asset('tomorrowland.jpg') }}">
+                        </div>
+                        <div class="col l6 s12">
+                            <h5 class="white-text">Location: {{$event->address}}</h5>
+                            <h5 class="white-text">Price: {{$event->question_six}}</h5>
+                            <h5 class="white-text">Dates: {{$event->question_seven}} - {{$event->question_eight}}</h5>
+                            <h5 class="white-text">Description: {{$event->description}}</h5>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </form>
         </div>
-      </form>
-    </div>
-  </nav>
+    </nav>
 
-
-    @foreach
-
-    @endforeach
+       
 
 </div>
 

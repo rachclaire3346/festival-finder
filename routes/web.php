@@ -26,3 +26,5 @@ Route::resource('browse', 'browseController');
 Route::resource('about', 'aboutController');
 
 Route::resource('question', 'questionsController');
+
+Route::resource('local', 'LocalController');
