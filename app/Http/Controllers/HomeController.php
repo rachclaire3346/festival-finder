@@ -24,13 +24,26 @@ class HomeController extends Controller
     public function index()
     {
 
-        // $matches = \App\Event::orderBy('events.question_seve')->get();
+
+        $originalmatches = \App\questions:: all()->where('user', '=', \Auth::user()->id);
+
+        $matches = [];
+
+        foreach ($originalmatches as $original) {
+            array_push($matches, $original->question_six);
+        }
+
+        $matches = array_unique($matches);
+
+        // $matches->firstWhere($allevents->question_six, '===', );
+
+        $allevents = \App\Event:: all();
 
         $locals = \App\Event::limit(3)->orderBy('events.question_seven')->get();
 
         $events = \App\Event:: all()->where('administrator', '=', \Auth::user()->id);
 
 
-        return view('home', compact('events', 'locals'));
+        return view('home', compact('events', 'locals', 'matches', 'allevents'));
     }
 }

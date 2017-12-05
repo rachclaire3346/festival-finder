@@ -58,6 +58,20 @@
         color: #00FFFF;
     } 
 
+    .blueparagraph {
+        color: #00FFFF;
+        padding: 0;
+    }
+
+    .information {
+        padding-top: 55px;
+        width: 900px;
+    }
+
+    .topper {
+        padding-top: 30px;
+    }
+
     </style>
 
 </head>
@@ -97,12 +111,37 @@
     </nav>
 </div>
 
-    <!-- <div class="row">
-        <div class="center-align col l12">
-            <img class="hide-on-med-and-down" src="{{ asset('logo.png') }}">
-        </div>
-    </div> -->
 
+        <div class="row">
+            <div class="center-align col l12">
+                <img class="hide-on-med-and-down" style="height:200px; width:600px;" src="{{ asset('logo.png') }}">
+            </div>
+        </div>
+
+        <div class="topper center-align">
+            <h3 class="blueparagraph">Your dream festival is waiting...</h3>
+        </div>
+
+        <div class="row information">
+            <div class="center-align col l6">
+                <h4 class="white-text">We are all about finding the right festival for you! Browse our list of all events or get results tailored just for you by taking the quiz.</h4>
+
+                 <div class="row center-align formsubmitting">
+                    <button class="btn">
+                        <a href="/">Quiz</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="center-align col l6">
+                <h4 class="white-text">Upload your own events! Fill out the event submission form and short quiz and your event will be added to the site!</h4>
+
+                <div class="row center-align formsubmitting">
+                    <button class="btn">
+                        <a href="/events">Create Event</a>
+                    </button>
+                </div>
+            </div>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
