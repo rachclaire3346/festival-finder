@@ -26,7 +26,7 @@
 
     @font-face {
         font-family: bebas;
-        src: url('{{ asset('fonts/bebas.otf') }}');
+        src: url('{{ asset('bebas.otf') }}');
     }
 
     p {
