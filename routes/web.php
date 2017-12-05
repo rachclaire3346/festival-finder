@@ -21,10 +21,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('events', 'EventsController');
 
-Route::resource('browse', 'browseController');
+Route::resource('browse', 'BrowseController');
 
-Route::resource('about', 'aboutController');
+Route::resource('about', 'AboutController');
 
-Route::resource('question', 'questionsController');
+Route::resource('question', 'QuestionsController');
 
 Route::resource('local', 'LocalController');
