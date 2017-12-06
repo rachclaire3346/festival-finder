@@ -127,7 +127,7 @@
             @endforeach
         <div class="row center-align formsubmitting">
             <button class="btn">
-                <a href="/">Retake Quiz</a>
+                <a href="/welcome">Retake Quiz</a>
             </button>
         </div>
     </div>
