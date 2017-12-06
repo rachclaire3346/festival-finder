@@ -78,7 +78,7 @@
     </ul>
     <nav class="black">
       <div class="nav-wrapper">
-        <a href="{{ url('/') }}">
+        <a href="{{ url('/welcome') }}">
             <img class="ff" src="{{ asset('ugh.png') }}">
         </a>
         <ul class="right hide-on-med-and-down">

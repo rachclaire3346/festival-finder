@@ -1,12 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+
+            <div class="row">
+                <div class="center-align col l12">
+                    <img class="hide-on-med-and-down" style="height:200px; width:600px;" src="{{ asset('logo.png') }}">
+                </div>
+            </div>
 <div class="container">
     <div class="row">
         <div>
             <div>
-                <div><h3 class="pinkwords">Login</h3></div>
-
                 <div>
                     <form method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}

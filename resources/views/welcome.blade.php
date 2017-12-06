@@ -108,7 +108,7 @@
     </head>
     
     <body>
-            <a href="{{ url('/') }}">
+            <a href="{{ url('/welcome') }}">
                 <img class="ff" src="{{ asset('ugh.png') }}">
             </a>
         <div class="flex-center position-ref">

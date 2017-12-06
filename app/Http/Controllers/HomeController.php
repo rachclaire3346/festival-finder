@@ -25,7 +25,7 @@ class HomeController extends Controller
     {
 
 
-        $answers = \App\questions:: where('user', '=', \Auth::user()->id)->first();
+        $answers = \App\Question:: where('user', '=', \Auth::user()->id)->first();
 
 
         // $matches = [];

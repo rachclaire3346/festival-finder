@@ -74,7 +74,7 @@
     
     <nav class="black">
         <div class="nav-wrapper">
-            <a href="{{ url('/') }}">
+            <a href="{{ url('/welcome') }}">
                 <img class="ff" src="{{ asset('ugh.png') }}">
             </a>
             <ul id="dropdown1" class="dropdown-content">

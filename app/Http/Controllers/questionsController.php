@@ -36,7 +36,7 @@ class QuestionsController extends Controller
     public function store(Request $request)
     {
 
-        $question = new \App\questions;
+        $question = new \App\Question;
 
         $question->question_one = request('group2');
         $question->question_two = request('group3');
