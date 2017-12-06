@@ -19,7 +19,7 @@ class CreateNewEventsTable extends Migration
             $table->text('description');
             $table->string('address');
             $table->integer('zipcode');
-            $table->binary('image');
+            $table->binary('image')->nullable();
             $table->string('question_two');
             $table->string('question_three');
             $table->string('question_four');

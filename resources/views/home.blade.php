@@ -111,24 +111,20 @@
     </div>
     <div class="container">
         <h3 class="pinkwords">Matched Events</h3>
-        @foreach($matches as $match)
-            @foreach($allevents as $allevent)
-                @if($allevent->question_six === $match)
-                    <h4 class="white-text">{{$allevent->name}}</h4>
-                    <div class="row">
-                        <div class="col l6 s12">
-                            <img style="height:280px; width:430px;" src="{{ asset('tomorrowland.jpg') }}">
-                        </div>
-                        <div class="col l6 s12">
-                            <h5 class="white-text">Location: {{$allevent->address}}</h5>
-                            <h5 class="white-text">Price: {{$allevent->question_six}}</h5>
-                            <h5 class="white-text">Dates: {{$allevent->question_seven}} - {{$allevent->question_eight}}</h5>
-                            <h5 class="white-text">Description: {{$allevent->description}}</h5>
-                        </div>
+            @foreach($matchedevents as $event)
+                <h4 class="white-text">{{$event->name}}</h4>
+                <div class="row">
+                    <div class="col l6 s12">
+                        <img style="height:280px; width:430px;" src="{{ asset('tomorrowland.jpg') }}">
                     </div>
-                @endif
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Location: {{$event->address}}</h5>
+                        <h5 class="white-text">Price: {{$event->question_six}}</h5>
+                        <h5 class="white-text">Dates: {{$event->question_seven}} - {{$event->question_eight}}</h5>
+                        <h5 class="white-text">Description: {{$event->description}}</h5>
+                    </div>
+                </div>
             @endforeach
-        @endforeach
         <div class="row center-align formsubmitting">
             <button class="btn">
                 <a href="/">Retake Quiz</a>

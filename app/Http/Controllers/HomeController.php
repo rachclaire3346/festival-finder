@@ -25,25 +25,31 @@ class HomeController extends Controller
     {
 
 
-        $originalmatches = \App\questions:: all()->where('user', '=', \Auth::user()->id);
+        $answers = \App\questions:: where('user', '=', \Auth::user()->id)->first();
 
-        $matches = [];
 
-        foreach ($originalmatches as $original) {
-            array_push($matches, $original->question_six);
-        }
+        // $matches = [];
 
-        $matches = array_unique($matches);
+        // foreach ($originalmatches as $original) {
+        //     array_push($matches, $original->question_six);
+        // }
 
-        // $matches->firstWhere($allevents->question_six, '===', );
-
-        $allevents = \App\Event:: all();
+        // $matches = array_unique($matches);
+        if(
+            $answers != '') {
+            $matchedevents = \App\Event:: where([
+            ['administrator', '<>', \Auth::user()->id],
+            ['question_six', '=', $answers->question_six]
+            ])->get();
+    } else {
+        $matchedevents = [];
+    }
 
         $locals = \App\Event::limit(3)->orderBy('events.question_seven')->get();
 
         $events = \App\Event:: all()->where('administrator', '=', \Auth::user()->id);
 
 
-        return view('home', compact('events', 'locals', 'matches', 'allevents'));
+        return view('home', compact('events', 'locals', 'matchedevents'));
     }
 }

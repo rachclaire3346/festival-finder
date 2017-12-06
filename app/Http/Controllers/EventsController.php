@@ -42,14 +42,29 @@ class EventsController extends Controller
         $event->address = request('address');
         $event->zipcode = request('zipcode');
         $event->image = request('image');
-        $event->question_two = request('group3');
-        $event->question_three = request('group4');
-        $event->question_four = request('group5');
-        $event->question_five = request('group6');
-        $event->question_six = request('group7');
-        $event->question_seven = request('group8');
-        $event->question_eight = request('group9');
+        $event->question_two = request('question_two');
+        $event->question_three = request('question_three');
+        $event->question_four = request('question_four');
+        $event->question_five = request('question_five');
+        $event->question_six = request('question_six');
+        $event->question_seven = request('question_seven');
+        $event->question_eight = request('question_eight');
         $event->administrator = \Auth::user()->id;
+
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'address' => 'required',
+            'zipcode' => 'required',
+            'image' => 'required',
+            'question_two' => 'required',
+            'question_three' => 'required',
+            'question_four' => 'required',
+            'question_five' => 'required',
+            'question_six' => 'required',
+            'question_seven' => 'required',
+            'question_eight' => 'required'
+        ]);
 
 
         $event->save();

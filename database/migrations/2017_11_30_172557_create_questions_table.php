@@ -15,14 +15,14 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('question_one');
-            $table->string('question_two');
-            $table->string('question_three');
-            $table->string('question_four');
-            $table->string('question_five');
-            $table->string('question_six');
-            $table->dateTime('question_seven');
-            $table->dateTime('question_eight');
+            $table->string('question_one')->nullable();
+            $table->string('question_two')->nullable();
+            $table->string('question_three')->nullable();
+            $table->string('question_four')->nullable();
+            $table->string('question_five')->nullable();
+            $table->string('question_six')->nullable();
+            $table->dateTime('question_seven')->nullable();
+            $table->dateTime('question_eight')->nullable();
             $table->integer('user');
             $table->timestamps();
         });

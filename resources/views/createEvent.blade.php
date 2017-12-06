@@ -107,19 +107,19 @@
                                                 <label for="question_two" class="control-label"><h1 class="white-text center">How long is your event?</h1></label>
                                                 <div class="container">
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group3" type="radio" id="test7" value="7" />
+                                                        <input name="question_two" type="radio" id="test7" value="7" />
                                                         <label for="test7"></label>A. Day festival
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group3" type="radio" id="test8" value="8" />
+                                                        <input name="question_two" type="radio" id="test8" value="8" />
                                                         <label for="test8"></label>B. Two day festival
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group3" type="radio" id="test9" value="9" />
+                                                        <input name="question_two" type="radio" id="test9" value="9" />
                                                         <label for="test9"></label>C. Full weekend festival (3-4 days)
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group3" type="radio" id="test10" value="10" />
+                                                        <input name="question_two" type="radio" id="test10" value="10" />
                                                         <label for="test10"></label>D. Week long festival
                                                     </h5>
                                                 </div>
@@ -134,15 +134,15 @@
                                                 <label for="question_three" class="control-label"><h1 class="white-text center">How large are the crowds?</h1></label>
                                                 <div class="container">
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group4" type="radio" id="test11" value="11" />
+                                                        <input name="question_three" type="radio" id="test11" value="11" />
                                                         <label for="test11"></label>A. Smaller crowds where front row is easily accesible
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group4" type="radio" id="test12" value="12" />
+                                                        <input name="question_three" type="radio" id="test12" value="12" />
                                                         <label for="test12"></label>B. Medium sized crowds. A good mix of energy and personal space
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group4" type="radio" id="test13" value="13" />
+                                                        <input name="question_three" type="radio" id="test13" value="13" />
                                                         <label for="test13"></label>C. Huge crowds with high amounts of energy
                                                     </h5>
                                                 </div>
@@ -157,23 +157,23 @@
                                                 <label for="question_four" class="control-label"><h1 class="white-text center">Which headliner best matches your event's style?</h1></label>
                                                 <div class="container">
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group5" type="radio" id="test14" value="14" />
+                                                        <input name="question_four" type="radio" id="test14" value="14" />
                                                         <label for="test14"></label>A. Alan Walker
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group5" type="radio" id="test15" value="15" />
+                                                        <input name="question_four" type="radio" id="test15" value="15" />
                                                         <label for="test15"></label>B. Pretty Lights
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group5" type="radio" id="test16" value="16" />
+                                                        <input name="question_four" type="radio" id="test16" value="16" />
                                                         <label for="test16"></label>C. Skrillex
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group5" type="radio" id="test17" value="17" />
+                                                        <input name="question_four" type="radio" id="test17" value="17" />
                                                         <label for="test17"></label>D. Porter Robinson
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group5" type="radio" id="test18" value="18" />
+                                                        <input name="question_four" type="radio" id="test18" value="18" />
                                                         <label for="test18"></label>E. Dimitri Vegas and Like Mike
                                                     </h5>
                                                 </div>
@@ -188,11 +188,11 @@
                                                 <label for="question_five" class="control-label"><h1 class="white-text center">How elavorate are the stages at your event?</h1></label>
                                                 <div class="container">
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group6" type="radio" id="test22" value="22" />
+                                                        <input name="question_five" type="radio" id="test22" value="22" />
                                                         <label for="test22"></label>A. Very elaborate
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group6" type="radio" id="test23" value="23" />
+                                                        <input name="question_five" type="radio" id="test23" value="23" />
                                                         <label for="test23"></label>b. This event is more about just the music
                                                     </h5>
                                                 </div>
@@ -207,19 +207,19 @@
                                                 <label for="question_six" class="control-label"><h1 class="white-text center">What is the average price range of your event?</h1></label>
                                                 <div class="container">
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test24" value="$50 or less" />
+                                                        <input name="question_six" type="radio" id="test24" value="$50 or less" />
                                                         <label for="test24"></label>A. $50 or less
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test25" value="$50 - $100" />
+                                                        <input name="question_six" type="radio" id="test25" value="$50 - $100" />
                                                         <label for="test25"></label>B. $50 - $100
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test26" value="$100 - $300" />
+                                                        <input name="question_six" type="radio" id="test26" value="$100 - $300" />
                                                         <label for="test26"></label>C. $100 - $300
                                                     </h5>
                                                     <h5 class="white-text left-align valign-wrapper">
-                                                        <input name="group7" type="radio" id="test27" value="$300+" />
+                                                        <input name="question_six" type="radio" id="test27" value="$300+" />
                                                         <label for="test27"></label>D. $300+
                                                     </h5>
                                                 </div>
@@ -235,11 +235,11 @@
                                             <div class="container">
                                                 <div class="form-group{{ $errors->has('question_seven') ? ' has-error' : '' }}">
                                                     <label for="question_seven" class="control-label"><h5 class="white-text left-align">Starting date</h5></label>
-                                                    <input id="group8" name="group8" type="text" class="datepicker">
+                                                    <input id="question_seven" name="question_seven" type="text" class="datepicker">
                                                 </div>
                                                 <div class="form-group{{ $errors->has('question_eight') ? ' has-error' : '' }}">
                                                     <label for="question_eight" class="control-label"><h5 class="white-text left-align">Ending date</h5></label>
-                                                    <input id="group9" name="group9" type="text" class="datepicker">
+                                                    <input id="question_eight" name="question_eight" type="text" class="datepicker">
                                                 </div>
                                             </div>
                                         </div>
@@ -254,6 +254,15 @@
                                 </button>
                             </div>
                         </div>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     </form>
                 </div>
             </div>
